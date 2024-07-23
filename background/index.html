@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin:100px 500px;
+            background-color:red;
+            padding:100px;
+        }
+        h5,button{
+            margin:50px;
+            background-color: black;
+            color: white;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h5>Background-color:<a class="background name">red</a></h5>
+        <button class="change" onclick="changeBackground()">change</button>
+    </div>
+    <script>
+        var message =document.getElementsByClassName("change");
+        function  changeBackground() {
+            document.getElementsByClassName("box")[0].style.backgroundColor ="green";
+            
+    }
+    </script>
+</body>
+</html>
